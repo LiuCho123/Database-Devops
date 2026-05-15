@@ -78,7 +78,9 @@ INSERT INTO usuarios (nombre, email, edad, estado) VALUES
 ('Luis Hernández Torres', 'luis.hernandez@ejemplo.com', 39, 'inactivo'),
 ('Sofía Díaz Ramírez', 'sofia.diaz@ejemplo.com', 31, 'activo'),
 ('Pedro Jiménez Castro', 'pedro.jimenez@ejemplo.com', 27, 'activo'),
-('Laura Moreno Vargas', 'laura.moreno@ejemplo.com', 29, 'activo')
+('Laura Moreno Vargas', 'laura.moreno@ejemplo.com', 29, 'activo'),
+    ('Francisca Valenzuela', 'francisca@ejemplo.com', 25, 'activo')
+
 ON DUPLICATE KEY UPDATE 
     nombre = VALUES(nombre),
     edad = VALUES(edad),
